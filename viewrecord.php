@@ -22,7 +22,15 @@ $results = $crud->getAttendees();
         
     </tr>
 
-
+<!-- <tr>
+        <td>1</td>
+        <td>firstname value</td>
+        <td>lastname value</td>
+        <td>dob</td>             //manually inputting information within the table
+        <td>Email Address</td>
+        <td>321456987</td>
+        <td>Database Admin</td>
+</tr> -->
 
 
     <?php
