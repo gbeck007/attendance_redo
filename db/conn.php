@@ -18,10 +18,12 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 try{
     $pdo = new PDO($dsn, $user, $pass);
    // echo "Hello Database";
-
+   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch(PDOException $e) {
+    die($e->getMessage());
     throw new PDOException($e->getMessage());
+   
 }
 
 require_once 'crud.php';
