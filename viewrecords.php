@@ -33,14 +33,13 @@ $results = $crud->getAttendees();
             <td><?php echo $r['attendee_id'] ?></td>
             <td><?php echo $r['firstname'] ?></td>
             <td><?php echo $r['lastname'] ?></td>
-
             <!-- <td><?php echo $r['dateofbirth'] ?></td>
             <td><?php echo $r['emailaddress'] ?></td>
             <td><?php echo $r['contactnumber'] ?></td> -->
             <td><?php echo $r['name'] ?></td>
             <!-- <td><?php //echo $r['specialty_id'] ?></td> -->
 
-                <!-- ACTION BUTTONS -->
+            
         <td>
             <a href="view.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-primary">View</a>
             <a href="edit.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-warning">Edit</a>
